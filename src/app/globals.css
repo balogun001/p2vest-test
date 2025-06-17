@@ -1,26 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:  sans-serif;
+  overflowx: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.paytone-font {
+  font-family: 'Paytone One', sans-serif;
+}
+
+@layer base {
+  /* Custom colors */
+  :root {
+    --color-cancel-50: #FAF0F3;
+    --color-cancel-700: #D12953;
+    --color-blue-900: #1E4AE9;
+    --color-purple-50: #D4D7E3;
+    --color-purple-100: #959CB6;
+    --color-purple-200: #CA92E3;
+    --color-purple-300: #6D1F8F66;
+    --color-purple-500: #5D0186;
+    --color-purple-600: #4F0072;
+    --color-green-400: #004F53;
+    --color-gray-100: #F2F4F7;
+    --color-gray-200: #F8F2FF;
+    --color-gray-300: #D7E6FF;
+    --color-gray-500: rgba(255, 255, 255, 0.32);
+    --color-red-50: #FEF3F2;
+    --color-red-100: #FEE4E2;
+    --color-red-300: #FDA29B;
+    --color-red-400: #FE736E;
+    --color-red-500: #F04438;
+    --color-red-700: #B42318;
+  }
 }
